@@ -17,6 +17,10 @@ head.ready(function() {
 		slideshow: true
 	});
 
+	$(".js-nav a").click(function (){
+	  $(this).parent().addClass('is-active').siblings().removeClass('is-active');
+	});
+
 	function onepage(){
 		var windowheight = $(window).height();
 		var slideHeight = $('.js-slide').css('height',windowheight);

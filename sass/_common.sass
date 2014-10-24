@@ -3,7 +3,17 @@
 
 // Fonts
 // --------------------------------------------------
++font(ITCAvantGardeStd-Bk, ITCAvantGardeStd-Bk)
+=agb
+	font-family: "ITCAvantGardeStd-Bk", arial, sans-serif
 
++font(ITCAvantGardeStd-Md, ITCAvantGardeStd-Md)
+=agm
+	font-family: "ITCAvantGardeStd-Md", arial, sans-serif
+
++font(TradeGothicLTStd-Light, TradeGothicLTStd-Light)
+=tl
+	font-family: "TradeGothicLTStd-Light", arial, sans-serif
 // Variables & mixins & extend
 // --------------------------------------------------
 // $gray: #eee
@@ -33,14 +43,41 @@ body
 
 // Nav
 // --------------------------------------------------
+.navbar-toggle
+	margin: 0
+	float: left
+	background: #98A9C5
+	width: 68px
+	height: 68px
+	text-align: center
+	border: 0
+	+border-radius(0)
+	.icon-bar 
+		margin: 0 auto
+.navbar-collapse
+	float: left
+	+r(w768)
+		margin: 59px 0px 0px -68px !important
+		max-height: 100% !important
+		border: 0px
+		overflow-x: hidden
+		overflow-y: hidden
 .navbar
 	min-height: 68px
 	background: #FFEF54
-	border: none 
+	border: none
+	+r(w768)
+		margin: 0 -15px
+		background: transparent 
 .nav
 	&.m-mod
+		+r(w768)
+			margin: 0 0 0 68px
 		li
 			width: auto
+			height: 68px
+			background: #FFEF54
+			padding-left: 10px
 	li
 		width: 68px
 		text-align: center
@@ -88,6 +125,12 @@ body
 				font-size: 11px
 				&:before
 					content: none
+		&.is-active
+			a
+				background: #C0CFE0 !important
+				font-size: 11px
+				&:before
+					content: none
 	.nav-3
 		a
 			background: #D3D4D5
@@ -96,6 +139,12 @@ body
 				margin-top: -9px
 				margin-left: -16px
 			&:hover
+				background: #D3D4D5 !important
+				font-size: 11px
+				&:before
+					content: none
+		&.is-active
+			a
 				background: #D3D4D5 !important
 				font-size: 11px
 				&:before
@@ -112,6 +161,12 @@ body
 				font-size: 11px
 				&:before
 					content: none
+		&.is-active
+			a
+				background: #F5BC5C !important
+				font-size: 11px
+				&:before
+					content: none
 	.nav-5
 		a
 			background: #FDCE44
@@ -124,6 +179,12 @@ body
 				font-size: 11px
 				&:before
 					content: none
+		&.is-active
+			a
+				background: #FDCE44 !important
+				font-size: 11px
+				&:before
+					content: none
 	.nav-6
 		a
 			background: #FDDB00
@@ -132,6 +193,12 @@ body
 				margin-top: -10px
 				margin-left: -13px
 			&:hover
+				background: #FDDB00 !important
+				font-size: 11px
+				&:before
+					content: none
+		&.is-active
+			a
 				background: #FDDB00 !important
 				font-size: 11px
 				&:before
@@ -159,24 +226,34 @@ body
 			.minislide-item-text
 				left: 25%
 				bottom: 50px
+				+r(w768)
+					left: 30px
 		&.m-2
 			.minislide-item-media
 				background-position: 50% 50%
 			.minislide-item-text
 				top: 100px
 				left: 80px
+				+r(w768)
+					left: 50px
 		&.m-3
 			.minislide-item-text
 				top: 35%
 				left: 80px
+				+r(w768)
+					left: 50px
 		&.m-4
 			.minislide-item-text
 				top: 20%
 				left: 160px
+				+r(w768)
+					left: 80px
 	.minislide-item-media
 		height: 100%
 		+cover
 		background-position: 0 0
+		+r(w768)
+			background-position: 50% 50%
 	.minislide-item-text
 		width: 350px
 		text-align: left
@@ -184,12 +261,22 @@ body
 		text-transform: uppercase
 		position: absolute
 		line-height: 1.4
+		+tl
+		+r(w768)
+			width: 210px
+			font-size: 18px
 		p
 			margin: 0
 			line-height: 1.2 
 		.lead
 			text-align: right
 			font-size: 35px
+			+r(w768)
+				font-size: 18px
+				
+
+
+
 // 
 // --------------------------------------------------
 

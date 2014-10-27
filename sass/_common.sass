@@ -35,13 +35,15 @@ body
 		text-align: center
 		.vertical-in
 			vertical-align: middle
-			display: table-cell
+			display: table-cell 
 .slide-1
 	overflow: hidden
 .slide-2
 	overflow: hidden
 .slide-4
-	background: orange
+	position: relative
+.slide-5
+	overflow: hidden
 
 // Headings
 // --------------------------------------------------
@@ -400,6 +402,65 @@ body
 		+agm
 		p
 			margin: 0 0 10px
+
+.owp-settings
+	color: #787878
+	padding-bottom: 140px
+	.owp-settings-title
+		font-size: 25px
+		+agb
+	.owp-settings-content
+		font-size: 14px
+		+agm
+		margin-bottom: 50px
+		+r(w480)
+			margin-bottom: 20px
+	.owp-settings-content-note
+		font-size: 14px
+		+agm
+	.owp-settings-ico
+		+s(settings)
+		display: inline-block
+
+.owp-settings-nav
+	height: 140px
+	position: absolute
+	left: -15px
+	right: -15px
+	bottom: 0
+	.owp-settings-list
+		margin: 0
+		padding: 0
+		list-style: none
+		overflow: hidden
+	.owp-settings-item
+		width: 16.666%
+		float: left
+		height: 140px
+		line-height: 140px
+		&.m-1
+			background: #98A9C5
+		&.m-2
+			background: #C0CFE0
+		&.m-3
+			background: #D3D4D5
+		&.m-4
+			background: #F5BC5C
+		&.m-5
+			background: #FDCE44
+		&.m-6
+			background: #FDDB00
+	.owp-settings-link
+		display: inline-block
+		vertical-align: middle
+		margin: 0
+		width: 100%
+		font-size: 14px
+		line-height: 1.2
+		color: #828282
+		+agb
+		&:hover
+			text-decoration: none
 
 
 // 

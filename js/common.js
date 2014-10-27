@@ -1,7 +1,6 @@
 head.ready(function() {
 	smoothScroll.init({
-	    offset: 68, // Integer. How far to offset the scrolling anchor location in pixels
-
+	    offset: 68 // Integer. How far to offset the scrolling anchor location in pixels
 	});
 
 	$('.js-minislide').flexslider({
@@ -23,7 +22,8 @@ head.ready(function() {
 
 	function onepage(){
 		var windowheight = $(window).height();
-		var slideHeight = $('.js-slide').css('height',windowheight);
+		var navheight = (windowheight - 68);
+		var slideHeight = $('.js-slide').css('height',navheight);
 	}
 	if ($(".js-slide").length > 0){
 	  onepage();

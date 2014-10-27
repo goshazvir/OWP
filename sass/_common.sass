@@ -28,18 +28,20 @@ body
 .slide
 	min-height: 500px 
 	margin: 0 -15px
+	&.vertical
+		display: table
+		width: 100%
+		margin: 0
+		text-align: center
+		.vertical-in
+			vertical-align: middle
+			display: table-cell
 .slide-1
 	overflow: hidden
 .slide-2
 	overflow: hidden
-.slide-3
-	background: blue
 .slide-4
 	background: orange
-.slide-5
-	background: purple
-.slide-6
-	background: green 
 
 // Headings
 // --------------------------------------------------
@@ -371,7 +373,33 @@ body
 		-webkit-transition: all .295s linear
 		transition: all .295s linear
 				
+.owp-info
+	text-align: center
+	color: #787878
+	.owp-info-in
+		display: inline-block
+		vertical-align: middle
+	.owp-info-title
+		font-size: 25px
+		+agb
+	.owp-info-content
+		font-size: 14px
+		+agm
 
+.owp-contact
+	color: #787878 
+	.owp-contact-title
+		font-size: 25px
+		+agb
+	.owp-contact-label
+		+s(map)
+		margin: 10px 0 
+		display: inline-block
+	.owp-contact-content
+		font-size: 14px
+		+agm
+		p
+			margin: 0 0 10px
 
 
 // 

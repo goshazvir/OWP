@@ -7,7 +7,7 @@ html
   body
     .out
       .navbar.navbar-default.navbar-fixed-top(role='navigation')
-        .container
+        .container-fluid
           .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
             span.sr-only Toggle navigation
@@ -53,32 +53,32 @@ html
       .container-fluid
         .row
           span.col-lg-12.col-md-12.col-sm-12.col-xs-12
-            #s1.slide.slide-1.js-slide
+            #s1.slide.slide-1.js-slide1
               .minislide
                 .js-minislide
                   .js-minislide-in
-                    .minislide-item.js-slide.m-1
+                    .minislide-item.js-slide1.m-1
                       .minislide-item-media(style='background-image: url(img/slide1.jpg);')
                       .minislide-item-media-mobile(style='background-image: url(img/slide1_m.jpg);')
                       .minislide-item-text
                         p eine stadt
                         p.lead um glucklich
                         p zu wachsen
-                    .minislide-item.js-slide.m-2
+                    .minislide-item.js-slide1.m-2
                       .minislide-item-media(style='background-image: url(img/slide2.jpg);')
                       .minislide-item-media-mobile(style='background-image: url(img/slide2_m.jpg);')
                       .minislide-item-text
                         p eine stadt
                         p.lead um erfolgreich
                         p zu werden
-                    .minislide-item.js-slide.m-3
+                    .minislide-item.js-slide1.m-3
                       .minislide-item-media(style='background-image: url(img/slide3.jpg);')
                       .minislide-item-media-mobile(style='background-image: url(img/slide3_m.jpg);')
                       .minislide-item-text
                         p eine stadt
                         p.lead um lebenswert
                         p zu leben
-                    .minislide-item.js-slide.m-4
+                    .minislide-item.js-slide1.m-4
                       .minislide-item-media(style='background-image: url(img/slide4.jpg);')
                       .minislide-item-media-mobile(style='background-image: url(img/slide4_m.jpg);')
                       .minislide-item-text
@@ -203,6 +203,9 @@ html
                     p Erfahren Sie mehr übere unsere Abteilungen
                   i.owp-settings-ico
               .owp-settings-nav
+                .owp-settings-nav-mobile.js-mobile-nav
+                  .owp-settings-nav-mobile-in
+                    i.owp-settings-nav-mobile-ico
                 ul.owp-settings-list
                   li.owp-settings-item.m-1
                     a(href="#").owp-settings-link Jugend ÖVP <br> Bregenz

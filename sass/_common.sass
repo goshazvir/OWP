@@ -63,6 +63,7 @@ body
 		margin: 0 auto
 .navbar-collapse
 	float: left
+	margin-left: -15px !important
 	+r(w768)
 		margin: 59px 0px 0px -68px !important
 		max-height: 100% !important
@@ -75,7 +76,10 @@ body
 	border: none
 	+r(w768)
 		margin: 0 -15px
-		background: transparent 
+		background: transparent
+.navbar-nav
+	&.m-mod
+		margin-right: 0 !important
 .nav
 	&.m-mod
 		+r(w768)
@@ -227,7 +231,7 @@ body
 // --------------------------------------------------
 .minislide
 	.minislide-item
-		min-height: 600px
+		// min-height: 610px
 		position: relative
 		&.m-1
 			.minislide-item-text
@@ -428,6 +432,8 @@ body
 	left: -15px
 	right: -15px
 	bottom: 0
+	+r(w480)
+		height: auto
 	.owp-settings-list
 		margin: 0
 		padding: 0
@@ -438,6 +444,12 @@ body
 		float: left
 		height: 140px
 		line-height: 140px
+		+r(w480)
+			width: 100%
+			height: auto
+			padding: 10px 20px 10px 20px
+			line-height: 1.2
+			float: none
 		&.m-1
 			background: #98A9C5
 		&.m-2
@@ -459,8 +471,47 @@ body
 		line-height: 1.2
 		color: #828282
 		+agb
+		+r(w768)
+			font-size: 12px
+		+r(w480)
+			font-size: 14px
 		&:hover
 			text-decoration: none
+
+.owp-settings-nav-mobile
+	width: 100%
+	overflow: hidden
+	
+	position: absolute
+	top: -35px
+	left: 0
+	right: 0
+	&:before
+		content: ""
+		width: 1000px
+		height: 15px
+		position: absolute
+		top: 20px
+		right: -100%
+		background: #98A9C5 
+	.owp-settings-nav-mobile-in
+		width: 60px
+		height: 35px
+		display: none
+		margin: 0 auto
+		cursor: pointer
+		background: #98A9C5
+		// position: absolute
+		// top: -35px
+		// left: 50%
+		// margin-left: -30px
+		+border-radius(5px 5px 0 0)
+		+r(w480)
+			display: block
+	.owp-settings-nav-mobile-ico
+		+s(nav2)
+		display: inline-block
+
 
 
 // 

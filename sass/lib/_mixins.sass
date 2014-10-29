@@ -23,6 +23,7 @@ $w1024: 1024px
 $w900: 900px
 $w860: 860px
 $w800: 800px    
+$w770: 770px    
 $w768: 768px
 $w640: 640px
 $w560: 560px
@@ -48,6 +49,9 @@ $w320: 320px
 			@content
 	@if $media == w800
 		@media only screen and (max-width: $w800)
+			@content
+	@if $media == w770
+		@media only screen and (max-width: $w770)
 			@content
 	@if $media == w768
 		@media only screen and (max-width: $w768)

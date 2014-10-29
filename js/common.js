@@ -43,4 +43,8 @@ head.ready(function() {
 	  }
 	});
 
+	$('.js-nav li').on('click', function() {
+		$(".navbar-collapse").removeClass("in");
+	});
+
 });

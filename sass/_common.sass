@@ -89,6 +89,9 @@ body
 			height: 68px
 			background: #FFEF54
 			padding-left: 10px
+			&:hover
+				img
+					display: inline-block
 	li
 		width: 68px
 		text-align: center
@@ -127,9 +130,10 @@ body
 	.nav-1
 		&:hover
 			img
-				display: block
+				display: inline-block
 		&.is-active
-			display: block
+			img
+				display: inline-block
 		a
 			background: #98A9C5 !important
 			// &:before
@@ -230,10 +234,13 @@ body
 					content: none
 	.navbar-brand
 		padding: 0
-		margin-top: 8px
+		margin: 0px
+		height: 68px
 		display: inline-block
 		// +s(logo)
 		+hide-text
+		img
+			max-height: 96% 
 
 // Header
 // --------------------------------------------------
@@ -270,14 +277,15 @@ body
 					left: 30px
 		&.m-4
 			.minislide-item-text
-				top: 20%
-				left: 160px
+				top: 10%
+				left: 200px
 				+r(w768)
-					left: 80px
+					left: auto
+					right: 150px
 				+r(w480)
 					width: 130px
 					top: 100px
-					left: 120px
+					right: 150px
 	.minislide-item-media
 		height: 100%
 		+cover
